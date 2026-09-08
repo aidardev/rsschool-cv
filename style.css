@@ -96,10 +96,6 @@ strong {
     gap: 1rem;
     margin-top: 32px;
 }
-.header__contact {
-}
-.header-contact-item {
-}
 .header-contact-item__inner {
     display: flex;
     align-items: center;
@@ -196,10 +192,6 @@ a.header-contact-item__inner:hover {
     text-transform: uppercase;
 }
 
-.job-item {
-}
-.job-item__title {
-}
 .job-item__info {
     font-style: italic;
 }
@@ -212,17 +204,9 @@ a.header-contact-item__inner:hover {
     flex-direction: column;
     gap: 12px;
 }
-.project-item {
-}
-.project-item__title {
-}
 .project-item__subtitle {
     color: var(--color-subtle);
     font-style: italic;
-}
-.project-item__description {
-}
-.project-item__tech {
 }
 .project-item__link {
     display: inline-flex;
@@ -258,8 +242,6 @@ a.header-contact-item__inner:hover {
     flex-direction: column;
     gap: 0.3rem;
 }
-.skills__title {
-}
 .skills__list {
     display: flex;
     flex-wrap: wrap;
@@ -281,14 +263,6 @@ a.header-contact-item__inner:hover {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
-}
-.languages__item {
-}
-.item-language {
-}
-.item-language__title {
-}
-.item-language__text {
 }
 
 @media (max-width: 576px) {
@@ -317,13 +291,9 @@ a.header-contact-item__inner:hover {
 .footer__link {
     color: white;
 }
-.footer__link-icon {
-}
 .footer__year {
     font-size: 14px;
     font-weight: 600;
-}
-.footer__rss {
 }
 .footer__rss-logo {
     width: 48px;
