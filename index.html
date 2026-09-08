@@ -10,6 +10,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet" />
 
         <link rel="stylesheet" href="reset.css" />
+        <link rel="stylesheet" href="assets/prism/prism.css" />
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
@@ -208,6 +209,18 @@
                 </section>
                 <section class="section" id="code">
                     <h2 class="section__title section-title">Code Example</h2>
+                    <pre><code class="language-javascript">function throttle&lt;T extends (...args: any[]) => any>(fn: T, delay: number = 300) {
+    let lastCall = 0;
+
+    return function (this: ThisParameterType&lt;T>, ...args: Parameters&lt;T>) {
+        const now = Date.now();
+
+        if (now - lastCall >= delay) {
+            lastCall = now;
+            fn.apply(this, args);
+        }
+    };
+}</code></pre>
                 </section>
                 <section class="section" id="education">
                     <h2 class="section__title section-title">Education</h2>
@@ -245,5 +258,7 @@
                 </a>
             </footer>
         </div>
+
+        <script src="assets/prism/prism.js"></script>
     </body>
 </html>
