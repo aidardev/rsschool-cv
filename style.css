@@ -59,6 +59,7 @@ strong {
     display: flex;
     gap: 24px;
 }
+
 .header__logo {
     flex-shrink: 0;
     width: 200px;
@@ -114,15 +115,53 @@ a.header-contact-item__inner:hover {
 .nav__list {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem 2rem;
+    padding: 1rem;
 }
 .nav__list a {
     display: block;
     color: var(--color-text);
-    padding: 1rem;
     transition: color var(--transition-base);
+    position: relative;
+}
+.nav__list a::before {
+    position: absolute;
+    content: "";
+    display: block;
+    inset: -8px;
 }
 .nav__list a:hover {
     color: var(--color-primary);
+}
+
+@media (max-width: 768px) {
+    .header__top {
+        flex-direction: column;
+        align-items: center;
+    }
+    .header__logo {
+        width: 150px;
+        height: 150px;
+    }
+    .header__content {
+        text-align: center;
+    }
+    .header__title {
+        font-size: 28px;
+    }
+    .header__subtitle {
+        font-size: 18px;
+    }
+    .header__contacts {
+        justify-content: center;
+    }
+    .nav__list {
+        gap: 0.5rem 1rem;
+    }
+    .nav__list a::before {
+        inset: -4px;
+    }
 }
 
 /* CV Content */
@@ -196,6 +235,12 @@ a.header-contact-item__inner:hover {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem 1.5rem;
 }
+@media (max-width: 768px) {
+    .skills {
+        grid-template-columns: 1fr;
+    }
+}
+
 .skills__col {
     display: flex;
     flex-direction: column;
@@ -234,6 +279,17 @@ a.header-contact-item__inner:hover {
 .item-language__text {
 }
 
+@media (max-width: 576px) {
+    .languages {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 420px) {
+    .languages {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* Footer */
 .footer {
     display: flex;
@@ -259,4 +315,15 @@ a.header-contact-item__inner:hover {
 }
 .footer__rss-logo {
     width: 48px;
+}
+
+@media (max-width: 768px) {
+    pre[class*="language-"],
+    code[class*="language-"] {
+        font-size: 14px;
+    }
+
+    .footer {
+        padding: 1.5rem;
+    }
 }
