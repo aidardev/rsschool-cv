@@ -4,4 +4,4 @@ This repository contains a responsive CV webpage created as part of the **RS Sch
 
 ## Live Demo
 
-- [View CV Page](https://aidardev.github.io/rsschool-cv/)
+- [View CV Page](https://aidardev.com/rsschool-cv/)
