@@ -210,16 +210,19 @@
                 </section>
                 <section class="section" id="code">
                     <h2 class="section__title section-title">Code Example</h2>
-                    <pre><code class="language-javascript">function throttle&lt;T extends (...args: any[]) => any>(fn: T, delay: number = 300) {
+                    <pre><code class="language-javascript">function throttle&lt;T extends (...args: any[]) =&gt; any&gt;(fn: T, delay: number = 300) {
     let lastCall = 0;
+    let lastResult: ReturnType&lt;T&gt;;
 
-    return function (this: ThisParameterType&lt;T>, ...args: Parameters&lt;T>) {
+    return function (this: ThisParameterType&lt;T&gt;, ...args: Parameters&lt;T&gt;) {
         const now = Date.now();
 
-        if (now - lastCall >= delay) {
+        if (now - lastCall &gt;= delay) {
             lastCall = now;
-            fn.apply(this, args);
+            lastResult = fn.apply(this, args);
         }
+
+        return lastResult;
     };
 }</code></pre>
                 </section>
