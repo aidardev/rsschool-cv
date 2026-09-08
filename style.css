@@ -1,0 +1,115 @@
+/* Vars */
+:root {
+    --color-text: #000717;
+    --color-primary: #e16500;
+
+    --transition-base: 0.25s ease;
+
+    --container-padding: 1rem;
+    --container-width: calc(860px + var(--container-padding) * 2);
+
+    --row-gap: 1rem;
+}
+
+/* Utils */
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.list-unstyled {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Base Styles */
+body {
+    font-family: "Poppins", sans-serif;
+    color: var(--color-text);
+}
+
+.container {
+    max-width: var(--container-width);
+    padding-inline: var(--container-padding);
+    margin-inline: auto;
+}
+
+/* Header */
+.header {
+    padding-block: 32px;
+}
+.header__top {
+    display: flex;
+    gap: 24px;
+}
+.header__logo {
+    flex-shrink: 0;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+.header__content {
+    flex: 1 1 auto;
+}
+.header__title {
+    font-weight: 600;
+}
+.header__subtitle {
+    font-size: 20px;
+    font-weight: 400;
+}
+.header__contacts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 32px;
+}
+.header__contact {
+}
+.header-contact-item {
+}
+.header-contact-item__inner {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    color: var(--color-text);
+}
+a.header-contact-item__inner {
+    text-decoration: none;
+    transition: color var(--transition-base);
+}
+a.header-contact-item__inner:hover {
+    text-decoration: underline;
+    color: var(--color-primary);
+}
+.header-contact-item__icon {
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+}
+.header__nav {
+    margin-top: 1rem;
+}
+.nav {
+    border-bottom: 2px solid var(--color-text);
+}
+.nav__list {
+    display: flex;
+    justify-content: center;
+}
+.nav__list a {
+    display: block;
+    text-decoration: none;
+    color: var(--color-text);
+    padding: 1rem;
+    transition: color var(--transition-base);
+}
+
+.nav__list a:hover {
+    text-decoration: underline;
+    color: var(--color-primary);
+}

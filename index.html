@@ -4,6 +4,11 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet" />
+
         <link rel="stylesheet" href="reset.css" />
         <link rel="stylesheet" href="style.css" />
     </head>
@@ -11,21 +16,11 @@
         <header class="header">
             <div class="container">
                 <div class="header__top">
-                    <img src="assets/logo.svg" alt="Aidar Hasenov (aidardev) avatar" class="header__logo" width="300" height="300" />
+                    <img src="assets/logo.svg" alt="Aidar Hasenov (aidardev) avatar" class="header__logo img-responsive" width="300" height="300" />
                     <div class="header__content">
                         <h1 class="header__title">Aidar Khassenov</h1>
                         <h2 class="header__subtitle">Frontend Developer</h2>
-                        <ul class="header__contacts">
-                            <li class="header__contact header-contact-item">
-                                <a href="mailto:helloaidardev@gmail.com" class="header-contact-item__inner">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="header-contact-item__icon">
-                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                        <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10" />
-                                        <path d="M3 7l9 6l9 -6" />
-                                    </svg>
-                                    helloaidardev@gmail.com
-                                </a>
-                            </li>
+                        <ul class="header__contacts list-unstyled">
                             <li class="header__contact header-contact-item">
                                 <span class="header-contact-item__inner">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="header-contact-item__icon">
@@ -35,6 +30,16 @@
                                     </svg>
                                     Kazakhstan
                                 </span>
+                            </li>
+                            <li class="header__contact header-contact-item">
+                                <a href="mailto:helloaidardev@gmail.com" class="header-contact-item__inner">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="header-contact-item__icon">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10" />
+                                        <path d="M3 7l9 6l9 -6" />
+                                    </svg>
+                                    helloaidardev@gmail.com
+                                </a>
                             </li>
                             <li class="header__contact header-contact-item">
                                 <a href="https://www.linkedin.com/in/aidardev/" class="header-contact-item__inner">
@@ -89,7 +94,7 @@
                     </div>
                 </div>
                 <nav class="header__nav nav">
-                    <ul class="nav__list">
+                    <ul class="nav__list list-unstyled">
                         <li><a href="#">Summary</a></li>
                         <li><a href="#">Experience</a></li>
                         <li><a href="#">Projects</a></li>
