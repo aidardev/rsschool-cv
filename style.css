@@ -279,12 +279,14 @@ a.header-contact-item__inner:hover {
 /* Footer */
 .footer {
     display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
     align-items: center;
     justify-content: space-between;
+    background: var(--color-primary);
     padding: 2rem;
     margin-top: 2rem;
     margin-bottom: 1rem;
-    background: var(--color-subtle);
     color: white;
     border-radius: 0.5rem;
 }
@@ -296,7 +298,11 @@ a.header-contact-item__inner:hover {
     font-weight: 600;
 }
 .footer__rss-logo {
-    width: 48px;
+    width: 100px;
+}
+
+pre[class*="language-"] {
+    margin-bottom: 0;
 }
 
 @media (max-width: 768px) {
